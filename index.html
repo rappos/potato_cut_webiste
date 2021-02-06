@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Potatis-Giljotin</title>
+    <meta name="application-name" content="Potatis-Giljotin">
+    <meta name="theme-color" content="#6B7280">
+    <meta name="description" content="Delar en potatis med en giljotin">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="./script.js"></script>
+    <link rel="preload" href="./videos/film.gif" as="image">
+    <link rel="preload" href="images/first-frame.webp" as="image">
+    <link rel="prefetch" href="./videos/film.gif" as="image">
+    <link rel="prefetch" href="images/first-frame.webp" as="image">
 </head>
     <body class="bg-gray-500">
         <div class="flex flex-col w-screen bg-gray-500 bg-gray-700 pb-2" id="top-box">
@@ -19,7 +26,7 @@
             </button>
         </div>
         <div class="flex flex-col w-screen items-center" id="imageHolder">
-            <image src="./images/first-frame.png" width="720" height="480" loop=False class="lg:pt-10" id="theImage"/>
+            <image src="./images/first-frame.webp" alt="Potatis och giljotin" width="720" height="480" loop=False class="lg:pt-10" id="theImage"/>
         </div>
     </body>
 </html>
